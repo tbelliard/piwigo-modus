@@ -381,8 +381,9 @@ function modus_picture_content($content, $element_info)
 				$selected_derivative = $derivative;
 			else
 			{
-				if ($available_size[2]>1 || !$selected_derivative)
-					$selected_derivative = $derivative;
+				// We want to use the first image exceeding the available size.
+				//if ($available_size[2]>1 || !$selected_derivative)
+				$selected_derivative = $derivative;
 				break;
 			}
 		}

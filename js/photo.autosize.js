@@ -40,8 +40,8 @@ function rvas_choose(relaxed){
 	for (var i=0; i<RVAS.derivatives.length; i++){
 		var d = RVAS.derivatives[i];
 		if (d.w > available.w*available.zoom || d.h > available.h*available.zoom){
-			if (available.dpr>1 || !best)
-				best = d;
+			//if (available.dpr>1 || !best)
+			best = d;
 			break;
 		}
 		else
