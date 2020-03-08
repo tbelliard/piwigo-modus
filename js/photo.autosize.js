@@ -77,7 +77,6 @@ function rvas_choose(relaxed){
 						return;
 			}
 			$img
-				.attr("width", best.w).attr("height", best.h)
 				.attr("src", best.url)
 				.attr("usemap", "#map"+best.type);
 		}

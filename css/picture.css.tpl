@@ -33,6 +33,12 @@
 
 #theImage {
 	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+img#theMainImage {
+	height: 100%;
 }
 
 #imageInfos {
@@ -124,7 +130,8 @@ DIV.thumbHover { /* first & last holders only*/
 @media screen {
 /*picture page wide screen*/
 .wide #theImage {
-	display: inline;
+	display: flex;
+	justify-content: center;
 	float: left;
 	width: 76.1%; /*min default picture derivative width*/
 }
@@ -260,4 +267,3 @@ DIV.thumbHover { /* first & last holders only*/
 		clear: both;
 	}
 }
-
