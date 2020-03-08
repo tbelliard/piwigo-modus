@@ -58,13 +58,12 @@ function rvas_choose(relaxed){
 						return;
 			}
 			if (!$img.data("natural-w") || $img.data("natural-w") < best.w) {
-				$img.attr("width", rescaled.w).attr("height", rescaled.h)
+				$img
 					.attr("src", best.url)
 					.removeAttr("usemap")
 					.data("natural-w", best.w);
 			}
 			else {
-				$img.attr("width", rescaled.w).attr("height", rescaled.h);
 				changed = false;
 			}
 		}
