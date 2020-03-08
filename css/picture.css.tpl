@@ -35,10 +35,12 @@
 	text-align: center;
 	display: flex;
 	justify-content: center;
+	height: 70vh;
 }
 
 img#theMainImage {
-	height: 100%;
+	max-height: 100%;
+	min-height: 100%;
 }
 
 #imageInfos {
@@ -134,6 +136,7 @@ DIV.thumbHover { /* first & last holders only*/
 	justify-content: center;
 	float: left;
 	width: 76.1%; /*min default picture derivative width*/
+	height: 70vh;
 }
 
 .wide #imageInfos {
